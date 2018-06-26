@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FavoriteConfiguration } from 'src/app/components/favorite/favorite.component';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,10 @@ export class AppComponent {
   title = 'app';
   get = {
     title: 'Favorite App',
-    isFavorite: true
+    isFavorite: false
+  }
+
+  onFavoriteChanged(favoriteConfig: FavoriteConfiguration) {
+    console.warn('Favorited: ', favoriteConfig);
   }
 }
