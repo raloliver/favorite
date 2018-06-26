@@ -1,0 +1,12 @@
+.favorite, .favorite_border {
+    position: relative;
+    display: inline-block;
+}
+
+.favorite:after {
+    content: "favorite";
+}
+
+.favorite_border:after {
+    content: "favorite_border";
+}
